@@ -10,9 +10,10 @@ app = FastAPI()
 #MODEL_PATH = '/models/best_model.pkl'
 BASE_DIR = os.getcwd()  # This gets the current working directory
 MODEL_PATH = os.path.join(BASE_DIR, "models", "best_model.pkl")  # Update if using .joblib
-@app.route("/", methods=["GET"])
-def home():
-    return {"message": "Model loaded successfully!"}
+
+#@app.route("/", methods=["GET"])
+#def home():
+#    return {"message": "Model loaded successfully!"}
 
 class UserInput(BaseModel):
     Administrative: float
