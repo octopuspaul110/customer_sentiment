@@ -112,7 +112,7 @@ def predict(user_input: UserInput):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Unexpected error: {str(e)}")
 
-if _name_ == "_main_":
+if '_name_' == "_main_":
     import uvicorn
     port = int(os.environ.get("PORT", 8000))  # Render dynamically assigns a port
     uvicorn.run(app, host="0.0.0.0", port=port)
